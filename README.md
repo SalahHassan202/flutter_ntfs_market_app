@@ -52,15 +52,5 @@ flutter run
 
 ---
 
-## **App Description (Simple & Professional)**
-
-**Short version:**
-> Artify is a Flutter-based NFT marketplace UI showcasing a modern and clean design with smooth navigation between screens.
-
-**Slightly longer version:**
-> Artify is a UI-focused Flutter application that demonstrates a modern NFT marketplace design. The app includes onboarding, home, and details screens, built using clean layouts, custom styling, and local assets, with no backend or blockchain integration.
-
----
-
 
 
