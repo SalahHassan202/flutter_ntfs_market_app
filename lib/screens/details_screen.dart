@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ntfs_market_app/screens/profile_screen.dart';
 
 class DetailsScreen extends StatelessWidget {
   const DetailsScreen({super.key});
@@ -33,11 +34,19 @@ class DetailsScreen extends StatelessWidget {
 
               const SizedBox(height: 48),
 
-              Image.asset(
-                "assets/Image Preview.png",
-                width: double.infinity,
-                height: 329,
-                fit: BoxFit.cover,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => ProfileScreen()),
+                  );
+                },
+                child: Image.asset(
+                  "assets/Image Preview.png",
+                  width: double.infinity,
+                  height: 329,
+                  fit: BoxFit.cover,
+                ),
               ),
 
               const SizedBox(height: 24),
