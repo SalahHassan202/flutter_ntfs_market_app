@@ -6,6 +6,12 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List<String> items = [
+      'assets/images/item 1.png',
+      'assets/images/item 2.png',
+      'assets/images/item 3.png',
+      'assets/images/item 4.png',
+    ];
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -112,6 +118,7 @@ class ProfileScreen extends StatelessWidget {
               ),
 
               const SizedBox(height: 20),
+              Image.asset('assets/images/item 1.png', height: 100),
               GridView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
@@ -133,10 +140,12 @@ class ProfileScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(14),
-                              color: Colors.grey,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(14),
+                            child: Image.asset(
+                              items[index],
+                              fit: BoxFit.cover,
+                              width: double.infinity,
                             ),
                           ),
                         ),
