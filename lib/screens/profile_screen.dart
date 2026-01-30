@@ -7,10 +7,10 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> items = [
-      'assets/item 1.png',
-      'assets/item 2.png',
-      'assets/item 3.png',
-      'assets/item 4.png',
+      'assets/item_1.png',
+      'assets/item_2.png',
+      'assets/item_3.png',
+      'assets/item_4.png',
     ];
     return Scaffold(
       backgroundColor: Colors.white,
@@ -146,7 +146,7 @@ class ProfileScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(14),
                             child: Image.asset(
                               items[index],
-                              fit: BoxFit.cover,
+                              fit: BoxFit.fill,
                               width: double.infinity,
                             ),
                           ),
