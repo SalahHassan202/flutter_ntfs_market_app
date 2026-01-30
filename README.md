@@ -93,5 +93,3 @@ Design credit belongs to the original Figma community designer.
 If you find this project useful, feel free to give it a star.
 
 ```
-
----
