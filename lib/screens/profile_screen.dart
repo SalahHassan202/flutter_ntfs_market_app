@@ -7,10 +7,10 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> items = [
-      'assets/images/item 1.png',
-      'assets/images/item 2.png',
-      'assets/images/item 3.png',
-      'assets/images/item 4.png',
+      'assets/item 1.png',
+      'assets/item 2.png',
+      'assets/item 3.png',
+      'assets/item 4.png',
     ];
     return Scaffold(
       backgroundColor: Colors.white,
@@ -68,9 +68,9 @@ class ProfileScreen extends StatelessWidget {
               ),
               SizedBox(height: 8),
               Text(
-                "Each Apes NFT is a unique masterpiece, and crafted by artists around the globe.",
+                "Each Apes NFT is a unique masterpiece, and\n crafted by artists around the globe.",
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(color: Colors.grey, fontSize: 14),
               ),
 
               SizedBox(height: 20),
@@ -82,7 +82,6 @@ class ProfileScreen extends StatelessWidget {
                   CustomStatItem(value: "13.99", label: "Floor Price"),
                 ],
               ),
-
               Container(
                 height: 52,
                 decoration: BoxDecoration(
@@ -108,7 +107,11 @@ class ProfileScreen extends StatelessWidget {
                 children: [
                   Text(
                     "Item’s",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Colors.green,
+                    ),
                   ),
                   Text(
                     "Activity",
@@ -117,8 +120,7 @@ class ProfileScreen extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 20),
-              Image.asset('assets/images/item 1.png', height: 100),
+              SizedBox(height: 20),
               GridView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
