@@ -200,7 +200,7 @@ class HomeScreen extends StatelessWidget {
                 "assets/Best artist.png",
                 width: double.infinity,
                 height: 100,
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
               ),
             ],
           ),
